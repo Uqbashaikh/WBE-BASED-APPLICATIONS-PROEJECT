@@ -1,0 +1,88 @@
+/* Product Card Styles */
+.product-card {
+    width: 100%;
+    /* Take full width */
+    max-width: 300px;
+    border: 1px solid #ddd;
+    background-color: #d9534f;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    /* Add a border between image and details */
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-details h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.product-details p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.product-details strong {
+    color: #333;
+}
+
+.product-rating {
+    margin-top: 10px;
+}
+
+.product-rating span {
+    color: #ffc107;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.product-actions button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-actions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.product-inventory {
+    margin-top: 10px;
+}
+
+.product-inventory span {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        max-width: 100%;
+    }
+}
